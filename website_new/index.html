@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv=""X-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- font awesome cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Home</title>
+        <link rel="stylesheet" href="home_style.css">
+    </head>
+<body>
+    <header>
+        <h2 class="logo">Sam's Green Garden</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>       
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+            <button class="login_button">Login</button></a>
+
+        </nav>
+    </header>
+    <!-- This is flex container having section and aside -->
+
+    <div class="container">
+
+        <div class="slide">
+
+            <div class="items" style="background-image:url(sliding_images/img1.jpg)"  >
+                <div class="content">
+                    <div class="name">Kylling</div>
+                    <div class="des">Write some text about the menu</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="items" >
+                <div class="content" style="background-image:url(sliding_images/img2.jpg)" >
+                    <div class="name">Pizza</div>
+                    <div class="des">Write some text about the menu</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="items" style="background-image:url(sliding_images/img3.jpg)"  >
+                <div class="content">
+                    <div class="name">Pasta</div>
+                    <div class="des">Write some text about the menu</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="items" style="background-image:url(sliding_images/img4.jpg)" >
+                <div class="content">
+                    <div class="name">Smørbrød</div>
+                    <div class="des">Write some text about the menu</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="items" style="background-image:url(sliding_images/img5.jpg)"  >
+                <div class="content">
+                    <div class="name">Pasta Carbonara</div>
+                    <div class="des">Write some text about the menu</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="items" style="background-image:url(sliding_images/img6.jpg)"  >
+                <div class="content">
+                    <div class="name">Ireland</div>
+                    <div class="des">Write some text about the menu</div>
+                    <button>See More</button>
+                </div>
+            </div>
+
+        </div>
+         
+       <!-- This is the div for the arrows to slide the windows --> 
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <script src="slide.js"></script>
+    <script src="script.js"></script> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    
+</body>
+</html>
