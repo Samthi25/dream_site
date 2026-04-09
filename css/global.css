@@ -1,0 +1,60 @@
+:root {
+    
+    /* Code snippet is applied when the user screen is default (light mode)*/
+    /* w3schools.com - Custom CSS variables*/
+
+    --color-light: rgb(255, 255, 255);
+    --color-dark: rgb(8, 8, 8);
+    --color-primary: rgb(230, 230, 230);
+    --color-secondary: rgb(37, 41, 112);
+    --color-tertiary: rgb(75, 70, 135);
+
+    --background: var(--color-light);
+    --foreground: var(--color-dark);
+
+    /* Accessible Font size - https://css-tricks.com/accessible-font-sizing-explained/ */
+
+    font-size: 62.5%; /* 10px, default is 16px*/
+    --font-size-small: 1.4rem;
+    --font-size-default: 1.6rem;
+    --font-size-large: 1.8rem;
+    
+    --word-spacing--small: 0.22rem; 
+    --word-spacing--default: 0.3rem;
+    --word-spacing--large: 0.4rem;
+
+    --letter-spacing--small: 0.2rem; 
+    --letter-spacing--default: 0.2rem;
+    --letter-spacing--large: 0.3rem;
+
+    --line-height--small: 2.1rem; 
+    --line-height--default: 2.4rem; 
+    --line-height--large: 3.6rem;
+
+    --box-shadow-menu: rgb(168, 165, 165);
+
+    --bg-color--carousel: rgba(0, 0, 0, 0.8);
+    --bg-color--form: rgb(242, 242, 242);
+    --box-shadow--one: rgba(0, 0, 0, 0.12); 
+    --box-shadow--to: rgba(0, 0, 0, 0.19);
+    --color-carousel: rgba(255, 255, 255);
+}
+
+/* If the user's system is in dark mode */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-light: rgb(255, 249, 237);
+        --color-dark: rgb(71, 69, 84);
+        --color-primary: rgb(105, 102, 118);
+        --color-secondary: rgb(255, 231, 120);
+        --color-tertiary: rgb(255, 244, 108);
+
+        --box-shadow-menu: rgb(44, 42, 56);
+
+        --bg-color--carousel: rgba(0, 0, 0, 0.2);
+        --bg-color--form: rgb(86, 83, 98);
+        --box-shadow--one: rgba(0, 0, 0, 0.12); 
+        --box-shadow--to: rgba(0, 0, 0, 0.19);
+    }
+}

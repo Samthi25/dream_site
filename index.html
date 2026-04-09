@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Dream Garden </title>
+        <link rel="icon" type="image/x-icon" href="../../images/banner/dream-favicon.png">
+        <meta name="description" content="Dream Garden - The best restaurant in town!"> 
+
+    <!--   <link rel="stylesheet" href="../css/homepage.css">   -->
+        <link rel="stylesheet" href="../css/common.css">  
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/index.css">
+
+        <!-- Fonts from Google Fonts. (https://fonts.google.com) -->
+
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Archivo+Black">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Judson?query=judson">    
+       
+        <!-- Allergies icons from FontAwesome. (https://fontawesome.com/icons)-->
+
+        <script src="https://kit.fontawesome.com/b13c0ae639.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <div id="grid-container"> <!-- Container for the whole body. -->
+
+            <header id="banner-image">
+
+                <a href="#main" class="skip"> Skip to main content </a>
+
+                <!-- Video from Youtube. https://youtu.be/IdZ-ZHLyEHs with some adjustment in css. -->
+                
+                <nav id="navbar" class="navbar-padding" aria-label="top navigation bar">
+                    <div class="top-navbar-container">
+
+                        <div class="nav-logo-container"> 
+
+                                <span aria-hidden="true"> 
+                                    <img id="hidden-img-dark" src="../images/banner/dream-logo.png" alt="Dream Garden logo" height="104" width="110">
+                                    <img id="hidden-img-light" src="../images/banner/dream-garden-logo-1.png" alt="Dream Garden logo" height="104" width="110">
+                                </span>
+                                <span class="sr-only"> Home </span> 
+                            
+                            </a>
+
+                            <!-- It shows or hide navigation links. -->
+
+                            <button type="button" id="mobileMenuTrigger" 
+                            aria-expanded="false" 
+                            aria-controls="navigationLinks" 
+                            aria-label="Open and close navigation">
+
+                                <!-- Create a hamburger menu  -->
+
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                                <span class="line3"></span>
+
+                            </button>
+                        </div>
+
+                        <!-- Navigation links visible on large screen. -->
+
+                        <div id="navigationLinks" class="nav-links-container">
+
+                            <ul class="nav-links">
+                                <li><a href="../index.html" id="home"class="topnav-a"> Home </a></li>
+                                <li><a href="html/menu.html"  class="topnav-a"> Menu </a></li>
+                                <li><a href="html/booking.html" class="topnav-a"> Booking </a></li>
+                                <li><a href="#contact-us" class="topnav-a"> Contact us </a></li>
+                            
+                            </ul>
+
+                        </div>
+                        
+                    </div>
+                </nav>
+
+                <!-- Javascript for the open and close the navigation. -->
+
+                <script src="../script/hamburger.js"></script>
+
+            </header>
+
+            <!-- Main container -->
+
+            <div id="main-content" class="container main-content">
+
+                <!-- Left navigation bar-->
+
+                <aside>
+
+                    <nav class="aside-navbar" aria-label="aside navigation bar">
+                        
+                        <a href="html/menu.html" id="menu" class="aside-a">Menu</a>
+                        <a href="html/booking.html" id="booking" class="aside-a">Booking</a>
+                        <a href="html/contact.html" id="contact" class="aside-a">Contact</a>
+
+                    
+                    </nav>
+
+                </aside>
+
+                <!-- Main content - Sidebar and content-->
+
+                <main> 
+                    <section>
+
+                        <h1 id="main" tabindex="-1" class="text"><b> Welcome to Dream Garden </b></h1>
+                            <p class="text p-spacing"> At Dream Garden, we believe in creating more than just meals - we create moments. If you are looking 
+                            for a place to share good memories over delicious food with friends, family and loved
+                            ones, then Dream Garden is the place to be. </p>
+                            <p class="text p-spacing">You can easily explore our variety of food and drink menus and reserve a table for casual dining, 
+                            birthdays, anniversaries, or any special occasion. whether it's a cozy dinner for two or å lively 
+                            celebration, we are here to make it special - all in warm and welcoming atmosphere.
+                            </p>                  
+                        
+                    </section>
+                </main>
+            </div>
+
+            <!-- Footer with contact information, address and opening hours. -->
+
+            <footer>
+                <div id="footer-container" class="container footer-container">
+
+                    <section id="address">
+                        <h4> Address </h4>
+                        <address>
+                            Dream Garden <br>
+                            Engelgata 12 <br> 
+                            8920 Elverom
+                        </address>
+                    </section>
+
+                    <section id="opening-hours">
+                        <h4> Opening hours </h4>
+                        <p>   
+                            Monday-Friday <br> (11.00 - 22.00) <br>
+                            Saturday <br> (11.00 - 23.00) <br>
+                            Sunday <br> (11.00 - 21.00)
+                        </p>
+                    </section>
+
+                    <section id="contact-us">
+                        <h4> Contact us </h4>
+                        <address>
+                            <a href="tel:+4701010011" class="style-links"> Telephone number: <br> <span class="footer-links">  +47 222 22 211 </span></a> <br><br>
+                            <a href="mailto:info@dreamgarden.no" class="style-links"> For other inquiries, <br>
+                            <span class="footer-links"> please send us an e-mail </span></a>
+                        </address>
+                    </section>
+                
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,581 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
+
+/* Header - Hero image */
+
+#hero-image {
+    /* 
+    Anonymous [freepik]. (n.d.). 
+    Free photo flat lay composition of pasta with copyspace [photo], 
+    https://www.freepik.com/free-photo/flat-lay-composition-pasta-with-copyspace_4675205.htm#page=3&query=italian%20food&position=17&from_view=search&track=sph
+    */
+
+    background-image:url("../../images/menu/ingredients.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 40rem;
+    width: 100%;
+}
+
+/* Aside - navigation bar */
+
+aside .aside-navbar { 
+    background-color: var(--color-primary);
+    display: grid; 
+    font-size: var(--font-size--small);
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+    letter-spacing: var(--letter-spacing--small); 
+    line-height: var(--line-height--small); 
+    padding: 0.8rem; 
+    word-spacing: var(--word-spacing--small); 
+}
+
+aside .aside-navbar .aside-a { padding: 0.8rem; }
+
+/* Main section */
+
+/* Declare font size */
+
+main { 
+    font-size: var(--font-size--default);
+    letter-spacing: var(--letter-spacing--default);
+    line-height: var(--line-height--default);
+    margin: 0;
+    word-spacing: var(--word-spacing--default);
+}
+
+/* Grid layout for menu */
+
+#menu {
+    display: grid;
+    gap: 2.5em;
+    grid-template-columns: 1fr;
+}
+
+/* Declare font size */
+
+h1 {
+    font-size: var(--font-size--large);
+    letter-spacing: var(--letter-spacing--large); 
+    line-height: var(--line-height--large); 
+    text-align: center;
+    word-spacing: var(--word-spacing--large); 
+}
+
+/* Group and style a food catergory as a card */
+
+.card {
+    box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow--menu);
+    display:grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr; 
+}
+
+.card > img { width: 100%; }
+
+.card:last-child { padding-bottom: 2rem; }
+
+/* Just make text more cleaner with padding and gap */
+
+.dish {
+    display: grid; 
+    gap:0.5rem; 
+    grid-template-columns: 1fr; 
+    padding: 0rem 2rem; 
+}
+
+h2 {
+    border-bottom: 0.2em solid var(--color-primary);
+    font-size: var(--font-size--default);
+    letter-spacing: var(--letter-spacing--default); 
+    line-height: var(--line-height--default); 
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    word-spacing: var(--word-spacing--default); 
+}
+
+/* Hyperlinks */
+
+main .hyperlinks {  color: var(--foreground); text-decoration: none; }
+
+main .hyperlinks:focus{ background-color: var(--color-primary); color: var(--color-secondary); }
+
+main .hyperlinks:hover { color: var(--color-tertiary); text-decoration: underline; }
+
+h3 { 
+    font-size: var(--font-size--small);
+    letter-spacing: var(--letter-spacing--small); 
+    line-height: var(--line-height--small); 
+    word-spacing: var(--word-spacing--small); 
+}
+
+/* For dish name and price */
+
+.price-container { display: flex; justify-content: space-between; }
+
+.price { margin-left: 3em; }
+
+.description { 
+    font-size: var(--font-size--small);
+    letter-spacing: var(--letter-spacing--small); 
+    line-height: var(--line-height--small); 
+    word-spacing: var(--word-spacing--small); 
+}
+
+/* Allergies */
+
+.box-like-btn { /* Mini layout for allergies */
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, auto);
+    justify-content: left;
+}
+
+/* Make it look like a button without using <button> tag */
+
+.allergies { 
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
+    color: var(--foreground);
+    font-size: var(--font-size--small);
+    letter-spacing: var(--letter-spacing--small); 
+    line-height: var(--line-height--small); 
+    padding: 0.5rem;
+    word-spacing: var(--word-spacing--small);
+}
+
+.allergies:hover { color:var(--color-tertiary); }
+
+/* Icons for allergies */
+
+.fa-solid { color: var(--color-tertiary); }
+.fa-solid:hover { color: var(--color-tertiary); }
+
+/* Beverages */
+
+.card-beverages {
+    box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow--menu);
+    display:grid; 
+    gap: 1.5em;
+    grid-template-columns: 1fr; 
+}
+
+.card-beverages > img { width: 100%; }
+
+.beverage { padding-left: 1rem; padding-right: 1rem; }
+
+.beverage-name { font-weight: normal; }
+
+/* Footer - declare font sizes */
+
+h4 {
+    font-size: var(--font-size--default);  
+    letter-spacing: var(--letter-spacing--default); 
+    line-height: var(--line-height--default); 
+    word-spacing: var(--word-spacing--default); 
+} 
+
+footer address, footer p {
+    font-size: var(--font-size--default);
+    letter-spacing: var(--letter-spacing--default); 
+    line-height: var(--line-height--default); 
+    word-spacing: var(--word-spacing--default); 
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 30em) and (min-width: 23em) { /* 368px - 480px */
+    
+    /* Tiny adjustment - mostly padding */
+
+    .aside-navbar .aside-a { padding: 1rem; } 
+
+    #menu { padding: 0rem 1rem; } 
+
+    .card { gap: 2em; } 
+
+    .card:last-child { padding-bottom: 3rem; }
+
+    .dish { padding: 0rem 3rem; }
+
+    .beverage { padding: 0rem 3rem; }
+}
+
+@media only screen and (max-width: 41.5em) and (min-width: 30.0625em) {  /* 481px - 664px */ 
+    
+    /* Adjustment - font sizes, padding, gap */
+
+    aside .aside-navbar { 
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    aside .aside-navbar .aside-a { padding: 1rem; } 
+
+    #menu { gap: 4em; } 
+
+    .card { gap: 3em; }
+
+    .card:last-child { padding-bottom: 3rem; }
+
+    .dish { gap: 0; padding: 0rem 3rem; }
+
+    h2 {
+        font-size: var(--font-size--large);
+        letter-spacing: var(--letter-spacing--large); 
+        line-height: var(--line-height--large); 
+        word-spacing: var(--word-spacing--large); 
+    }
+
+    h3 {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    .description {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    .box-like-btn { /* Change to 3 buttons on the same line */
+        gap: 2rem;
+        grid-template-columns: repeat(3, auto); 
+    }
+
+    .allergies {
+        border-radius: 2rem;
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default);
+    } 
+
+    .beverage { padding: 0rem 3rem; }
+}
+
+@media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { /* 665px - 781px */
+    
+    /* Adjustment - font sizes, padding, gap */
+
+    aside .aside-navbar { 
+        font-size: var(--font-size--default);
+        grid-template-columns: repeat(3, auto); /* Change to 3 columns instead of 2 */
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    aside .aside-navbar .aside-a { padding: 1.5rem; } 
+
+    #menu { gap: 4em; }
+
+    .card { gap: 2em; }
+
+    .card:last-child { padding-bottom: 4rem; }
+
+    .dish { gap: 1rem; padding: 0rem 3rem; }
+
+    h2 {
+        font-size: var(--font-size--large);
+        letter-spacing: var(--letter-spacing--large); 
+        line-height: var(--line-height--large); 
+        word-spacing: var(--word-spacing--large); 
+    }
+
+    h3 {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    .description {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    .box-like-btn { /* Change to 4 buttons on the same line */
+        gap: 2rem;
+        grid-template-columns: repeat(4, auto); 
+    }
+
+    .allergies {
+        border-radius: 2rem;
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        padding: 0.5rem;
+        word-spacing: var(--word-spacing--default);
+    }
+
+    .beverage { padding: 0rem 3rem; }
+}
+
+@media only screen and (max-width: 57.5625em) and (min-width: 48.875em) { /* 782px - 921px */
+    
+    /* Adjustment - font sizes, padding, gap */
+
+    #hero-image { height: 50rem; } 
+
+    /* Make the navbar sticky - accessible for user since the menu is long. */
+
+    aside .aside-navbar { 
+        border: 0.1em solid var(--background);
+        font-size: var(--font-size--default);
+        grid-template-columns: repeat(1, auto); /* Change from 3 columns to 1 */
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        padding: 2rem;
+        position: sticky; 
+        position: -webkit-sticky; /* Safari */
+        top: 5rem;
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    aside .aside-navbar .aside-a { padding: 1rem; }
+
+    #menu { padding: 0rem 2.5rem; }
+
+    h1 { 
+        border: 0.2em double var(--color-primary);
+        margin-top: 0rem; 
+        padding: 1rem; 
+    }
+
+    .card { box-shadow: none; gap: 2em; } /* Remove box-shadow */
+
+    .card:last-child { padding-bottom: 2rem; }
+
+    .dish { padding: 0rem; }
+
+    h2 {
+        font-size: var(--font-size--large);
+        letter-spacing: var(--letter-spacing--large); 
+        line-height: var(--line-height--large); 
+        word-spacing: var(--word-spacing--large); 
+    }
+
+    h3 {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    .description {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    .box-like-btn { /* Change to 3 again */
+        gap: 2rem;
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .allergies {
+        border-radius: 2rem;
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        padding: 0.4rem;
+        word-spacing: var(--word-spacing--default);
+    }
+
+    .card-beverages { box-shadow: none; } /* Remove box-shadow */
+
+    .beverage { padding: 0rem; }
+
+    footer address, footer p {
+        font-size: var(--font-size--small);
+        letter-spacing: var(--letter-spacing--small); 
+        line-height: var(--line-height--small); 
+        word-spacing: var(--word-spacing--small); 
+    }
+
+}
+
+@media only screen and (max-width: 64em) and (min-width: 57.625em) { /* 922px - 1024px */
+
+    /* Adjustment - font sizes, padding, gap */
+
+    #hero-image { height: 50rem; } 
+
+    aside .aside-navbar { 
+        border: 0.1em solid var(--background);
+        font-size: var(--font-size--default);
+        grid-template-columns: repeat(1, auto);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        padding: 2rem;
+        position: sticky;
+        position: -webkit-sticky; /* Sticky navigation bar */
+        top: 5rem;
+        word-spacing: var(--word-spacing--default);
+    }
+
+    aside .aside-navbar .aside-a { padding: 1rem; }
+
+    #menu { padding: 0rem 2.5rem; }
+
+    h1 { 
+        border: 0.2em double var(--color-primary);
+        margin-top: 0rem; 
+        padding: 1rem; 
+    }
+
+    .card { box-shadow: none; gap: 2em; } /* Remove box-shadow */
+
+    .card:last-child { padding-bottom: 4rem; }
+
+    .dish { padding: 0rem; }
+
+    h2 {
+        font-size: var(--font-size--large);
+        letter-spacing: var(--letter-spacing--large); 
+        line-height: var(--line-height--large); 
+        word-spacing: var(--word-spacing--large); 
+    }
+
+    h3 {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    .description {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    .box-like-btn { /* From 3 columns to 4 */
+        gap: 2rem;
+        grid-template-columns: repeat(4, auto); 
+    }
+
+    .allergies {
+        border-radius: 1.5rem;
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        padding: 0.5rem;
+        word-spacing: var(--word-spacing--default);
+    }
+
+    .card-beverages { 
+        box-shadow: none; /* Remove box-shadow */
+        gap: 0.5em; 
+        padding-bottom: 2rem; 
+    }
+
+    .beverage { padding: 0rem; }
+
+    footer address, footer p {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+}
+
+@media only screen and (min-width: 64.0625em) { /* 1025px and up */ 
+
+    /* Adjustment - font sizes, padding, gap */
+
+    #hero-image { height: 60rem; }
+
+    aside .aside-navbar { /* Sticky navbar */
+        border: 0.1em solid var(--background);
+        font-size: var(--font-size--default);
+        grid-template-columns: repeat(1, auto);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        padding: 3rem;
+        position: -webkit-sticky; 
+        position: sticky;
+        top: 5rem;
+        word-spacing: var(--word-spacing--default);
+    }
+
+    aside .aside-navbar .aside-a { padding: 1rem; }
+
+    #menu { padding: 0rem 2.5rem; }
+
+    h1 { 
+        border: 0.2em double var(--color-primary);
+        margin-top: 0rem; 
+        padding: 1rem; 
+    }
+
+    .card { box-shadow: none; gap: 2em; } /* Remove box-shadow */
+
+    .card:last-child { padding-bottom: 4rem; }
+
+    .dish { padding: 0rem; }
+
+    h2 {
+        font-size: var(--font-size--large);
+        letter-spacing: var(--letter-spacing--large); 
+        line-height: var(--line-height--large); 
+        word-spacing: var(--word-spacing--large); 
+    }
+
+    h3 {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    .description {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+
+    .box-like-btn {
+        gap: 2rem;
+        grid-template-columns: repeat(4, auto);
+        justify-content: flex-start;
+    }
+
+    .allergies {
+        border-radius: 1.5rem;
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        padding: 0.5rem;
+        word-spacing: var(--word-spacing--default);
+    }
+
+    .card-beverages { 
+        box-shadow: none; /* Remove box-shadow */
+        padding-bottom: 6rem; 
+    }
+
+    .beverage { padding: 0rem; }
+
+    footer address, footer p {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+}

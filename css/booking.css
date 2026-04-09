@@ -1,0 +1,439 @@
+
+
+/* Banner image */
+#banner-image {
+    background-image: url("../images/banner/banner_image3.jpg");  
+    height: 40rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: saturate(70%) brightness(95%);
+
+}
+
+main {
+    font-size: var(--font-size--default);  
+    line-height: var(--line-height--default);
+    word-spacing: var(--word-spacing--default);
+    letter-spacing: var(--letter-spacing--default);
+}
+.aside-navbar{
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+}
+.padding {
+    padding: 0rem 1rem;
+}
+h1{
+    font-size: var(--font-size--large);
+    letter-spacing: var(--letter-spacing--large);
+    line-height: var(--line-height--large);
+    word-spacing: var(--word-spacing--large); 
+    font-weight: bold;
+    text-align: center;
+}
+.p-spacing {
+    margin-bottom: 3.2rem;
+}
+
+main .hyperlinks{
+    text-decoration: none;
+    color: var(--foreground);
+}
+main .hyperlinks:hover {
+    color: var(--color-tertiary);
+    text-decoration: underline; 
+}
+main .hyperlinks.focus {
+    color: var(--color-secondary);
+    background-color: var(--color-primary);;
+}
+
+/*Styling for carousel begin here */
+.padding-img{
+    padding:0rem 1rem;
+    vertical-align: middle;
+}
+
+.slideshow-container{
+    margin: auto;
+    max-width: 100%;
+    position: relative;
+}
+
+.imagesSlides {
+    display: none;
+}
+.fade {
+    animation-duration: 1.5s;
+    animation-name: fade;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.numbers{
+    background-color: var(--bg-color--carousel);
+    color: var(--color-carousel);
+    padding: 0.8rem 1.2rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+.images {
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+.active-carousel, .dot:hover { 
+    background-color: var(--foreground); 
+    border: 0.1rem solid var(--foreground); 
+}
+.img-caption{
+    font-size: var(--font-size--small);
+    letter-spacing: var(--letter-spacing--small);
+    line-height: var(--line-height--small);
+    word-spacing: var(--word-spacing--small);
+    background-color: var(--color-primary);
+    color: var(--foreground);
+    bottom: 0.2rem;
+    margin: 0;
+    padding: 0.8rem 1.2rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.prev .next {
+    background-color: var(--bg-color--carousel);
+    border-radius: 0 0.3rem 0.3rem 0;
+    color: var(--color-carousel);
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: -2.2rem;
+    padding: 1.6rem;
+    position: absolute;
+    top: 50%;
+    transition: 0.6s ease;
+    user-select: none;
+    width: auto;
+}
+
+.next {
+    border-radius: 0.3rem 0 0 0.3rem;
+    right: 0;
+}
+
+#text-align-line {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.dot{
+    background-color: var(--color-primary);
+    border-radius: 10%;
+    display: inline-block;
+    height: 0.5rem;
+    margin-top: 1.5rem;
+    width: 4rem;
+    cursor: pointer;
+    border: 0.1rem solid var(--color-primary);
+    transition: background-color 0.6s ease;
+}
+/* Styling for reservation form */
+
+h2 {
+    font-size: var(--font-size--large); 
+    letter-spacing: var(--letter-spacing--large);
+    line-height: var(--line-height--large);
+    word-spacing: var(--word-spacing--large);
+    font-weight: bold; 
+    text-align: center;
+}
+
+#booking-container {
+    background-color: var(--bg-color--form);
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+.booking-form {
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    padding: 2rem;
+    gap: 2rem;
+}
+.a-grid-and-gap {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2rem;
+}
+input[type=text], input[type=tel], input[type=email], 
+input[type=number], input[type=datetime-local], 
+select, textarea {
+    border: 0.1rem solid var(--color-primary);
+    border-radius: 0.4rem;
+    padding: 1.2rem;
+    box-sizing: border-box;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding: 1.2rem;
+    resize: vertical;
+    width: 100%;
+} 
+select{
+    background-color: var(--color-carousel);
+}
+.booking-form button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-size--small);
+    letter-spacing: var(--letter-spacing--small);
+    line-height: var(--line-height--small);
+    word-spacing: var(--word-spacing--small);
+    font-weight: bold;
+}
+button[type=submit] {
+    background-color: var(--color-tertiary);
+    border: none;
+    border-radius: 0.4rem;
+    color: var(--background);
+    padding: 1.2rem 2.4rem;
+    cursor: pointer;
+}
+button[type=submit]:hover {
+    background-color: var(--color-secondary);
+    color: var(--background);
+}
+
+/* Styling for reviews section */
+#card-container {
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    row-gap: 3rem;
+    max-width: 100%;
+}
+#card-container > .card {
+    background-color: var(--bg-color--form);
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    margin: 0 auto;
+    row-gap: 3rem;
+    text-align: center;
+    box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow--one),
+                0 0.6rem 2rem 0 var(--box-shadow--to);
+  }
+.img-card .profile-img { 
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+}
+.card .img-card {
+    padding-top: 2rem;
+}
+h3 {
+    font-size: var(--font-size--default);
+    letter-spacing: var(--letter-spacing--default);
+    line-height: var(--line-height--default);
+    word-spacing: var(--word-spacing--default);
+}
+.stars {
+  color: var(--color-secondary);
+}
+.stars:hover {
+  color: var(--color-tertiary)
+}
+q {
+    font-size: var(--font-size--small);
+    letter-spacing: var(--letter-spacing--small);
+    line-height: var(--line-height--small);
+    word-spacing: var(--word-spacing--small);
+    font-style: italic;
+    padding: 0rem 1.5rem 3rem 1.5rem;
+}
+
+/* footer styling - check whether common styling is working here */
+
+h4 {
+    font-size: var(--font-size--large);
+    letter-spacing: var(--letter-spacing--large);
+    line-height: var(--line-height--large);
+    word-spacing: var(--word-spacing--large);
+}
+footer address, footer p {
+    font-size: var(--font-size--default);
+    line-height: var(--line-height--default);
+    word-spacing: var(--word-spacing--default);
+    line-height: var(--line-height--default);
+}
+
+/*Responsive design for different screen sizes - 1em = 16px */
+/* 368px - 480px */
+@media only screen and (max-width: 30em) and (min-width: 23em) {   
+    .aside-navbar .aside-a { 
+      padding: 1rem;
+    }    
+    .padding { 
+      padding: 0rem 2rem; 
+    }
+    .padding-img { 
+      padding: 0rem 1.5rem; 
+    }
+    .card .img-card { 
+      padding-top: 3rem; 
+    }
+    q { 
+      padding: 0rem 1.8rem 3rem 1.8rem; 
+    } 
+}
+/* 481px - 664px */
+@media only screen and (max-width: 41.5em) and (min-width: 30.06em) {   
+    .aside-navbar .aside-a { 
+      padding: 1rem;
+    }    
+    .padding { 
+      padding: 0rem 1.5rem; 
+    }
+    .padding-img { 
+      padding: 0rem 1.5rem; 
+    }
+    .card .img-card { 
+      padding-top: 3rem; 
+    }
+    q { 
+      padding: 0rem 1.8rem 3rem 1.8rem; 
+    } 
+}
+/* 665px - 781px */
+@media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) {   
+    #banner-image {
+        height: 45rem;
+    }
+    .aside-navbar .aside-a { 
+      padding: 1rem;
+    }    
+    .padding { 
+      padding: 0rem 2rem; 
+    }
+    .padding-img { 
+      padding: 0rem 2rem; 
+    }
+    .card .img-card { 
+      padding-top: 3rem; 
+    }
+    #card-container{
+      column-gap: 1.5rem;
+      grid-template-columns: repeat(2, auto);
+    }
+    #card-container > .card {
+      box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.19);
+    }
+    q { 
+      padding: 0rem 2rem 3rem 2rem; 
+    } 
+}
+/* 782px - 921px */
+@media only screen and (max-width: 57.5625em) and (min-width: 48.875em) {   
+    #banner-image {
+        height: 50rem;
+    }
+    .aside-navbar .aside-a { 
+      padding: 1rem;
+    }    
+    .padding { 
+      padding: 0rem; 
+    }
+    .padding-img { 
+      padding: 0rem; 
+    }
+    .card .img-card { 
+      padding-top: 3rem; 
+    }
+    #card-container{
+      column-gap: 1.5rem;
+      grid-template-columns: repeat(2, auto);
+    }
+    #card-container > .card {
+      box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.19);
+    }
+    q { 
+      padding: 0rem 2rem 3rem 2rem; 
+    } 
+    h4{
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
+    }
+}
+/* 922px - 1024px */    
+@media only screen and (max-width: 64em) and (min-width: 57.625em) {   
+    #banner-image {
+        height: 50rem;
+    }
+    .aside-navbar .aside-a { 
+      padding: 1rem;
+    }    
+    .padding { 
+      padding: 0rem; 
+    }
+    .padding-img { 
+      padding: 0rem; 
+    }
+    .card .img-card { 
+      padding-top: 3rem; 
+    }
+    #card-container{
+      column-gap: 1.5rem;
+      grid-template-columns: repeat(2, auto);
+    }
+    #card-container > .card {
+      box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.19);
+    }
+    q { 
+      padding: 0rem 2rem 3rem 2rem; 
+    } 
+    h4{
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
+    }
+}
+/* 1025px and above */  
+@media only screen and (min-width: 64.0625em) {   
+    #banner-image {
+        height: 60rem;
+    }
+    .aside-navbar .aside-a { 
+      padding: 1rem;
+    }    
+    .padding { 
+      padding: 0rem; 
+    }
+    .padding-img { 
+      padding: 0rem; 
+    }
+    .card .img-card { 
+      padding-top: 3rem; 
+    }
+    #card-container{
+      column-gap: 1.5rem;
+      grid-template-columns: repeat(2, auto);
+    }
+    #card-container > .card {
+      box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.19);
+    }
+    q { 
+      padding: 0rem 2rem 3rem 2rem; 
+    } 
+    h4{
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default);
+        word-spacing: var(--word-spacing--default);
+    }
+}

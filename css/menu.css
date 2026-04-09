@@ -1,0 +1,486 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+/*  Header image */
+
+#banner-image {
+    background-image: url("../images/banner/banner_image2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40rem;
+    width: 100%;
+    filter: saturate(70%) brightness(95%);
+}
+/*  Side navigation bar */
+
+aside .aside-navbar {
+    background-color: var(--color-primary);
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, auto);
+    justify-content : space-around;
+    padding: 0.8rem;
+    font-size: var(--font-size-small);
+    word-spacing: var(--word-spacing--small);
+    line-height: var(--line-height--small);
+    letter-spacing: var(--letter-spacing--small);
+
+}
+
+aside .aside-navbar .aside-a {padding: 0.8rem;}
+
+/*   Font size in main section */
+
+main {margin: 0;}
+
+main, h2, h4, footer address, footer p{
+    word-spacing: var(--word-spacing--default);
+    font-size: var(--font-size-default);
+    letter-spacing: var(--letter-spacing--default);
+    line-height: var(--line-height--default);
+}
+
+/*   Grid layout for menu  */
+#menu {
+    display: grid;
+    gap: 2.5em;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    text-align: center;
+    word-spacing: var(--word-spacing--large);
+    font-size: var(--font-size--large);
+    letter-spacing: var(--letter-spacing--large);
+    line-height: var(--line-height--large);
+}
+
+.card {
+    box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow-menu);
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+.card > img {width: 100%;}
+
+.card:last-child {padding-bottom: 2rem;}
+
+/* Adding padding and gap to make clean text */
+
+.dish {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    padding: 0rem 2rem;
+}
+
+h2 {
+    border-bottom: 0.2em solid var(--color-primary);
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    background-color: transparent;
+}
+
+main h2 {
+    background: none !important;
+}
+main .hyperlinks {
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+main .hyperlinks:hover {
+    background-color: var(--color-tertiary);
+    text-decoration: underline;
+}
+
+main .hyperlinks:focus {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+h3 .description .allergies{
+    word-spacing: var(--word-spacing--small);
+    font-size: var(--font-size-small);
+    letter-spacing: var(--letter-spacing--small);
+    line-height: var(--line-height--small);
+}
+
+/* For dish and price */
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    margin-left: 3em;
+}
+
+/* For allergies - small figure */
+
+.box-like-btn {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, auto);
+    justify-content: left;
+}
+
+.allergies {
+    border: 1px solid var(--color-primary);
+    border-radius: 1rem;
+    background-color: var(--color-primary);
+    padding: 0.5rem;
+    color: var(--foreground);
+}
+
+.allergies:hover .fa-solid .fa-solid:hover{
+    color: var(--color-tertiary);
+}
+
+/* Beverages */
+
+.card-beverages {
+    box-shadow: 0 0.4rem 0.8rem 0 var(--box-shadow--menu);
+    gap: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card-beverages > img {
+    width: 100%;
+}
+
+.beverage {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.beverage-name {
+    font-weight: normal;
+}
+
+/* Media queries for different screen sizes */
+/*  Screen size 368px - 480px, Small mobile devices (Smartphones)*/
+
+@media only screen and (max-width: 30em) and (min-width: 23em) {
+
+    .aside-navbar .aside-a { 
+        padding: 1rem; 
+    }
+    .card {
+        gap: 2em;
+    }
+    .card:last-child {
+        padding-bottom: 3rem;
+    }
+    .dish .beverage {
+        padding: 0rem 1rem;
+    }
+    #menu{
+        padding:0rem 1rem;
+    }
+}
+
+/* Screen size 481px - 664px - Large smartphones / Small tablets.*/
+
+@media only screen and (max-width: 41.5em) and (min-width: 30.0625em){
+    
+    .aside-a aside .aside-navbar{
+        padding: 1rem;
+    }
+    aside .aside-navbar h3 .description .allergies{
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default);
+    }
+    .beverage{
+        padding: 0rem 3rem;
+    }
+    .card { 
+        gap: 3em; 
+    }
+    .card:last-child { 
+        padding-bottom: 3rem; 
+    }
+    .dish { 
+        gap: 0; 
+        padding: 0rem 3rem;
+    }
+    #menu {
+        gap: 4em;    
+    }
+    h2{
+        font-size: var(--font-size--large);
+        letter-spacing: var(--letter-spacing--large); 
+        line-height: var(--line-height--large); 
+        word-spacing: var(--word-spacing--large);     
+    }
+    .box-like.btn{
+        gap: 2rem;
+        grid-template-columns:repeat(3, auto);
+    }
+    .allergies {
+        border-radius: 2rem;
+    }
+
+}
+
+ /* Tablets (Portrait Mode)iPad size 665px - 781px */
+
+@media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { 
+    
+    h3, .description, .allergies, aside .aside-navbar {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default);
+    }
+    h2 {
+        font-size: var(--font-size--large);
+        letter-spacing: var(--letter-spacing--large); 
+        line-height: var(--line-height--large); 
+        word-spacing: var(--word-spacing--large); 
+    }
+    aside .aside-navbar {
+        grid-template-columns: repeat(3, auto);
+        padding: 1.5rem;
+    }
+    .aside-a {
+        padding: 1.5rem;
+    }
+    #menu {
+        gap: 4em;
+    }
+    .card { 
+        gap: 2em; 
+    }
+
+    .card:last-child { 
+        padding-bottom: 4rem;
+    }
+
+    .dish {
+        gap: 1rem; 
+        padding: 0rem 3rem; 
+    }
+    .box-like-btn { 
+        gap: 2rem;
+        grid-template-columns: repeat(4, auto); 
+    }
+    .beverage { 
+        padding: 0rem 3rem; 
+    }
+}
+
+ /* Tablets (landscape mode) 782px - 921px */
+@media only screen and (max-width: 57.5625em) and (min-width: 48.875em) { 
+    h1 { 
+        border: 0.2em solid var(--color-primary);
+        border-radius: 0.5em;
+        margin-top: 0rem; 
+        padding: 1rem; 
+    }
+    h2 {
+        font-size: var(--font-size--large);
+        letter-spacing: var(--letter-spacing--large); 
+        line-height: var(--line-height--large); 
+        word-spacing: var(--word-spacing--large); 
+    }
+    h3, .description, .allergies, aside .aside-navbar {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default);
+    }
+    aside .aside-navbar {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        border: 0.1em solid var(--background);
+        position: sticky;
+        position: -webkit-sticky;
+        top: 5rem;
+    }
+    .aside-a { 
+        padding: 1rem; 
+    }
+    #menu { 
+        padding: 0rem 2.5rem; 
+    }
+    .card { 
+        box-shadow: none; 
+        gap: 2em; 
+    } 
+
+    .card:last-child { 
+        padding-bottom: 2rem; 
+    }
+
+    .dish {
+        padding: 0rem; 
+    }
+    .box-like-btn {
+        gap: 2rem;
+        grid-template-columns: repeat(3, auto);
+    }
+    .card-beverages {
+        box-shadow: none; 
+    }
+    .beverage { 
+        padding: 0rem;
+    }
+    .allergies {
+        border-radius: 2rem;
+        padding: 0.4rem;
+    }
+    #banner-image {
+        height: 50rem;
+    }
+    footer address, footer p {
+        font-size: var(--font-size--small);
+        letter-spacing: var(--letter-spacing--small); 
+        line-height: var(--line-height--small); 
+        word-spacing: var(--word-spacing--small);
+    }
+}
+
+/* Screen size922px - 1024px */
+@media only screen and (max-width: 64em) and (min-width: 57.625em) { 
+
+    #banner-image { height: 50rem; } 
+
+    aside .aside-navbar { 
+        border: 0.1em solid var(--background);
+        grid-template-columns: 1fr; 
+        padding: 2rem;
+        position: sticky;
+        position: -webkit-sticky; 
+        top: 5rem;
+    }
+
+    aside .aside-navbar .aside-a { padding: 1rem; }
+
+    #menu { padding: 0rem 2.5rem; }
+
+    h1 { 
+        border: 0.2em solid var(--color-primary);
+        border-radius: 0.5em;
+        margin-top: 0rem; 
+        padding: 1rem; 
+    }
+    
+    .card { box-shadow: none; gap: 2em; } 
+
+    .card:last-child { padding-bottom: 4rem; }
+
+    .dish { padding: 0rem; }
+
+    h2 {
+        font-size: var(--font-size--large);
+        letter-spacing: var(--letter-spacing--large); 
+        line-height: var(--line-height--large); 
+        word-spacing: var(--word-spacing--large); 
+    }
+
+    aside .aside-navbar .description .allergies footer address, footer p {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default); 
+    }
+    .box-like-btn {
+        gap: 2rem;
+        grid-template-columns: repeat(4, auto); 
+    }
+
+    .allergies {
+        border-radius: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    .card-beverages { 
+        box-shadow: none; 
+        gap: 0.5em; 
+        padding-bottom: 2rem; 
+    }
+
+    .beverage { padding: 0rem; }
+
+}
+
+/* Desktops and large screen size: 1025px and up */ 
+@media only screen and (min-width: 64.0625em) { 
+    h1 { 
+        border: 0.2em solid var(--color-primary);
+        border-radius: 0.5em;
+        margin-top: 0rem; 
+        padding: 1rem; 
+    }
+    h2 {
+        font-size: var(--font-size--large);
+        letter-spacing: var(--letter-spacing--large);   
+        line-height: var(--line-height--large); 
+        word-spacing: var(--word-spacing--large); 
+    }
+    h3, .description, .allergies, aside .aside-navbar {
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: var(--line-height--default); 
+        word-spacing: var(--word-spacing--default);
+    }
+    footer address, footer p{
+        font-size: var(--font-size--default);
+        letter-spacing: var(--letter-spacing--default); 
+        line-height: 3.6rem;
+        word-spacing: var(--word-spacing--default);
+    }
+    aside .aside-navbar {
+        grid-template-columns: repeat(1, auto);
+        padding: 3rem;
+        border: 0.1em solid var(--background);
+        position: sticky;
+        position: -webkit-sticky;
+        top: 5rem;
+    }
+    .aside-a { 
+        padding: 1rem; 
+    }
+    #menu { 
+        padding: 0rem 2.5rem; 
+    }
+    .card { 
+        box-shadow: none; 
+        gap: 2em; 
+    } 
+
+    .card:last-child { 
+        padding-bottom: 2rem; 
+    }
+
+    .dish {
+        padding: 0rem; 
+    }
+    .box-like-btn {
+        gap: 2rem;
+        grid-template-columns: repeat(3, auto);
+    }
+    .card-beverages {
+        box-shadow: none;
+        padding: 6rem;
+    }
+    .beverage { 
+        padding: 0rem;
+    }
+    .allergies {
+        border-radius: 2rem;
+        padding: 0.4rem;
+    }
+    #banner-image {
+        height: 60rem;
+    }
+
+}

@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Dream Garden </title>
+        <link rel="icon" type="image/x-icon" href="../../images/banner/dream-favicon.png">
+        <meta name="description" content="Dream Garden - The best restaurant in town!"> 
+
+    <!--   <link rel="stylesheet" href="../css/homepage.css">   -->
+        <link rel="stylesheet" href="../css/common.css">  
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/menu.css">
+
+        <!-- Fonts from Google Fonts. (https://fonts.google.com) -->
+
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Archivo+Black">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Judson?query=judson">    
+       
+        <!-- Allergies icons from FontAwesome. (https://fontawesome.com/icons)-->
+
+        <script src="https://kit.fontawesome.com/b13c0ae639.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <div id="grid-container"> <!-- Container for the whole body. -->
+
+            <header id="banner-image">
+
+                <a href="#main" class="skip"> Skip to main content </a>
+
+                <!-- Video from Youtube. https://youtu.be/IdZ-ZHLyEHs with some adjustment in css. -->
+                
+                <nav id="navbar" class="navbar-padding" aria-label="top navigation bar">
+                    <div class="top-navbar-container">
+
+                        <div class="nav-logo-container"> 
+
+                                <span aria-hidden="true"> 
+                                    <img id="hidden-img-dark" src="../images/banner/dream-logo.png" alt="Dream Garden logo" height="104" width="110">
+                                    <img id="hidden-img-light" src="../images/banner/dream-garden-logo-1.png" alt="Dream Garden logo" height="104" width="110">
+                                </span>
+                                <span class="sr-only"> Home </span> 
+                            
+                            </a>
+
+                            <!-- It shows or hide navigation links. -->
+
+                            <button type="button" id="mobileMenuTrigger" 
+                            aria-expanded="false" 
+                            aria-controls="navigationLinks" 
+                            aria-label="Open and close navigation">
+
+                                <!-- Create a hamburger menu  -->
+
+                                <span class="line1"></span>
+                                <span class="line2"></span>
+                                <span class="line3"></span>
+
+                            </button>
+                        </div>
+
+                        <!-- Navigation links visible on large screen. -->
+
+                        <div id="navigationLinks" class="nav-links-container">
+
+                            <ul class="nav-links">
+                                <li><a href="../index.html"  class="topnav-a"> Home </a></li>
+                                <li><a href="menu.html" id="home" class="topnav-a"> Menu </a></li>
+                                <li><a href="booking.html" class="topnav-a"> Booking </a></li>
+                                <li><a href="#contact-us" class="topnav-a"> Contact us </a></li>
+                            
+                            </ul>
+
+                        </div>
+                        
+                    </div>
+                </nav>
+
+                <!-- Javascript for the open and close the navigation. -->
+
+                <script src="../script/hamburger.js"></script>
+
+            </header>
+
+            <!-- Main container -->
+
+            <div id="main-content" class="container main-content">
+
+                <!-- Left navigation bar-->
+
+                <aside>
+
+                    <nav class="aside-navbar" aria-label="aside navigation bar">
+                        
+                        <a href="#sandwiches" class="aside-a"><i class="fa-solid fa-bread-slice"></i> Sandwiches </a>
+                        <a href="#pizza" class="aside-a"><i class="fa-solid fa-pizza-slice"></i> Pizza </a>
+                        <a href="#pasta" class="aside-a"><i class="fa-solid fa-plate-wheat"></i> Pasta </a>
+                        <a href="#vegan" class="aside-a"><i class="fa-solid fa-seedling"></i> Vegan </a>
+                        <a href="#dessert" class="aside-a"><i class="fa-solid fa-cake-candles"></i> Desserts </a>
+                        <a href="#drinks" class="aside-a"><i class="fa-solid fa-mug-saucer"></i> Drinks </a>
+                    
+                    </nav>
+
+                </aside>
+
+                <!-- Main content - menu -->
+
+                <main> 
+                    <section id="menu">
+
+                        <h1 id="main" tabindex="-1"><b> Menu List </b></h1>
+
+                        <!-- Sandwiches -->
+
+                        <section> 
+
+                            <div class="card"> 
+
+                                <!-- Picture from openAI -->
+
+                                <img src="../../images/menu/sandwich-with-ham-and-cheese.jpg" 
+                                alt="Sandwich with ham and cheese"> 
+
+                                <div class="dish"> 
+                                    <h2 id="sandwiches" class= "hyperlinks"> Sandwiches </h2>
+                                    <h3 class= "price-container"> 
+                                        <b> Sandwich with ham and cheese </b>
+                                        <span class="price"> 105.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        Bread with ham, cheese, egg, lettuce, onions, cherry tomatoes and mortadella sausage. 
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                    </div>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Sandwich with shrimps </b>
+                                        <span class="price"> 125.- </span>
+                                    </h3>
+                                    <p class="description">
+                                        Bread with lemon, shrimps, rucola leaves, romaine lettuce, mayonnaise and lettuce. 
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-cow"></i> Milk </span> 
+                                        <span class="allergies"><i class="fa-solid fa-shrimp"></i> Shrimp </span>
+                                        <span class="allergies"><i class="fa-solid fa-lemon"></i> Citrus </span>
+                                    </div>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Bread with roast beef</b>
+                                        <span class="price"> 135.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        Bread with grilled slices of steak, romaine lettuce, pickled onions, cherry tomatoes and remoulade. 
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <!-- Pizza -->
+
+                        <section>
+                            <div class="card">
+
+                                <!-- 
+                                https://pixabay.com/pt/photos/pizza-prato-comida-queijo-almo%C3%A7o-3010062/ -->
+
+                                <img src="../../images/menu/pizza.jpg" 
+                                alt="Pizza Margherita"> 
+
+                                <div class="dish">
+                                    <h2 id="pizza" class= "hyperlinks"> Pizza </h2>
+                                    <h3 class= "price-container"> 
+                                        <b> Pizza Margherita </b>
+                                        <span class="price"> 185.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        With tomato sauce, mozzarella cheese and fresh basil. 
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
+                                    </div>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Pizza pepperoni </b>
+                                        <span class="price"> 205.- </span>
+                                    </h3>
+                                    <p class="description">
+                                        With tomato sauce, mozzarella cheese and pepperoni.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
+                                    </div>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Chicken Pizza </b>
+                                        <span class="price"> 285.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        With tomato sauce, mozzarella cheese, grilled chicken pieces, 
+                                        red onins, bell peppers, sweet corn, mushrooms, fresh herbs, garlic sauce.                                 </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
+                                    </div>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Beef Pizza </b>
+                                        <span class="price"> 280.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        With seasoned ground beef, mozzarella cheese, onions,
+                                        Jalapeno, bell peppers, olives, mushrooms and BBQ sauce.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <!-- Pasta -->
+
+                        <section>
+
+                            <div class="card">
+
+                                <!-- -->
+
+                                <img src="../../images/menu/pasta-carbonara.jpg" 
+                                alt="Pasta carbonara"> 
+
+                                <div class="dish">
+                                    <h2 id="pasta" class= "hyperlinks"> Pasta </h2>
+                                    <h3 class= "price-container"> 
+                                        <b> Pasta carbonara </b>
+                                        <span class="price"> 165.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        Pasta with bacon, and white parmesan sauce.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
+                                    </div>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Spaghetti Bolognese </b>
+                                        <span class="price"> 165.- </span>
+                                    </h3>
+                                    <p class="description">
+                                        Pasta with meat, and tomato sauce.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
+                                    </div>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Lasagna </b>
+                                        <span class="price"> 165.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        Layered pasta with meat, and tomato sauce topped with cheese.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
+                                    </div>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b>  Pasta Cacio e pepe</b>
+                                        <span class="price"> 165.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        Pasta with white sauce topped with pecorino Romano cheese.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <!-- Vegan & Vegetarian -->
+                        
+                        <section> 
+
+                            <div class="card">
+
+                                <!--  
+                                https://pixabay.com/de/photos/suppe-karotte-ingwer-nahrung-essen-2006317/ -->
+
+                                <img src="../../images/menu/creamy-carrot-soup.jpg" 
+                                alt="Creamy carrot soup"> 
+
+                                <div class="dish">
+                                    <h2 id="vegan" class= "hyperlinks"> Vegetarian </h2>
+                                    <h3 class= "price-container"> 
+                                        <b> Vegan board </b>
+                                        <span class="price"> 205.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        A board served with avocado sandwich and chia pudding with grains and blueberries. 
+                                        Carrot and ginger soup.
+                                    </p>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Creamy carrot soup </b>
+                                        <span class="price"> 165.- </span>
+                                    </h3>
+                                    <p class="description">
+                                        Soup with carrot, onion, garlic, butter or olive oil, vegetable broth, 
+                                        cream or coconut milk, fresh herbs, salt and pepper.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-lemon"></i> Citrus </span>
+                                    </div>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Vegetarian salad </b>
+                                        <span class="price"> 185.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        A lentil salad with salad mixture, pomegranates, baby spinach, plant-based feta cheese and a homemade dressing.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <!-- Dessert -->
+
+                        <section> 
+
+                            <div class="card">
+
+                                <!-- 
+                                https://pixabay.com/photos/german-black-forest-cake-cake-533754/ -->
+
+                                <img src="../../images/menu/black-forest-cake.jpg" 
+                                alt="A piece of black forest cake"> 
+
+                                <div class="dish">
+                                    <h2 id="dessert" class= "hyperlinks"> Dessert </h2>
+                                    <h3 class= "price-container"> 
+                                        <b> Brownies </b>
+                                        <span class="price"> 55.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        A tasty, gluten-free and crispy slice of cake with the taste of cocoa.
+                                    </p>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Carrot cake </b>
+                                        <span class="price"> 55.- </span>
+                                    </h3>
+                                    <p class="description">
+                                        A tasty slice of cake with grated carrot, topped with cinnamon and cream cheese.
+                                    </p>
+                                    <div class="box-like-btn">
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
+                                        <span class="allergies"><i class="fa-solid fa-cow"></i> Milk </span>
+                                    </div>
+                                </div>
+
+                                <div class="dish">
+                                    <h3 class= "price-container"> 
+                                        <b> Apple cake </b>
+                                        <span class="price"> 55.- </span>
+                                    </h3>
+                                    <p class="description"> 
+                                        A tasty slice of cake with apples, cinnamon, almonds, and vanilla sugar.
+                                    </p>
+                                    <div class="box-like-btn" >
+                                        <span class="allergies"><i class="fa-solid fa-egg"></i> Egg </span>
+                                        <span class="allergies"><i class="fa-solid fa-wheat-awn"></i> Wheat </span> 
+                                        <span class="allergies"><i class="fa-solid fa-cow"></i> Milk </span>
+                                        <span class="allergies"><i class="fa-solid fa-hand-dots"></i> Nuts </span> 
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        
+                        <!-- Beverages -->
+
+                        <section> 
+
+                                <div class="card-beverages">
+
+                                    <!-- 
+                                https://pixabay.com/photos/coffee-cappuccino-latte-art-6154681/ -->
+
+                                    <img src="../../images/menu/caffe-latte.jpg" 
+                                    alt="Caffe latte"> 
+
+                                    <div class="beverage">
+                                        <h2 id="drinks" class= "hyperlinks"> Beverages </h2>
+                                        <h3 class= "price-container"> 
+                                            <b class="beverage-name"> Coffee </b>
+                                            <span class="price"> 35.- </span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="beverage">
+                                        <h3 class= "price-container"> 
+                                            <b class="beverage-name"> Caffè Latte </b>
+                                            <span class="price"> 65.- </span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="beverage">
+                                        <h3 class= "price-container"> 
+                                            <b class="beverage-name"> Americano </b>
+                                            <span class="price"> 49.- </span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="beverage">
+                                        <h3 class= "price-container"> 
+                                            <b class="beverage-name"> Espresso </b>
+                                            <span class="price"> 30.- </span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="beverage">
+                                        <h3 class= "price-container"> 
+                                            <b class="beverage-name"> Mineral water </b>
+                                            <span class="price"> 30.- </span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="beverage">
+                                        <h3 class= "price-container"> 
+                                            <b class="beverage-name"> Sparkle apple </b>
+                                            <span class="price"> 60.- </span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="beverage">
+                                        <h3 class= "price-container"> 
+                                            <b class="beverage-name"> Apple cider </b>
+                                            <span class="price"> 69.- </span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="beverage">
+                                        <h3 class= "price-container"> 
+                                            <b class="beverage-name"> Dahls </b>
+                                            <span class="price"> 79.- </span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="beverage">
+                                        <h3 class= "price-container"> 
+                                            <b class="beverage-name"> Red wine </b>
+                                            <span class="price"> 130.- </span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="beverage">
+                                        <h3 class= "price-container"> 
+                                            <b class="beverage-name"> White wine </b>
+                                            <span class="price"> 130.- </span>
+                                        </h3>
+                                    </div>
+
+                                </div>
+                        </section>
+
+                    </section>
+                </main>
+            </div>
+
+            <!-- Footer with contact information, address and opening hours. -->
+
+            <footer>
+                <div id="footer-container" class="container footer-container">
+
+                    <section id="address">
+                        <h4> Address </h4>
+                        <address>
+                            Dream Garden <br>
+                            Engelgata 12 <br> 
+                            8920 Elverom
+                        </address>
+                    </section>
+
+                    <section id="opening-hours">
+                        <h4> Opening hours </h4>
+                        <p>   
+                            Monday-Friday <br> (11.00 - 22.00) <br>
+                            Saturday <br> (11.00 - 23.00) <br>
+                            Sunday <br> (11.00 - 21.00)
+                        </p>
+                    </section>
+
+                    <section id="contact-us">
+                        <h4> Contact us </h4>
+                        <address>
+                            <a href="tel:+4701010011" class="style-links"> Telephone number: <br> <span class="footer-links">  +47 222 22 211 </span></a> <br><br>
+                            <a href="mailto:info@dreamgarden.no" class="style-links"> For other inquiries, <br>
+                            <span class="footer-links"> please send us an e-mail </span></a>
+                        </address>
+                    </section>
+                
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

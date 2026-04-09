@@ -1,0 +1,109 @@
+#banner-image{
+  background-image: url("../images/banner/banner_image1.jpg");
+}
+
+main {
+  font-size: var(--font-size--default);  
+  line-height: var(--line-height--default);
+  word-spacing: var(--word-spacing--default);
+  letter-spacing: var(--letter-spacing--default);
+} 
+
+h1 { 
+    font-size: var(--font-size--large); 
+    letter-spacing: var(--letter-spacing--large);
+    line-height: var(--line-height--large);
+    word-spacing: var(--word-spacing--large);
+    font-weight: bold; 
+    text-align: center;
+}
+
+.p-spacing {
+    margin-bottom: 3.2rem; 
+}
+.text .main{
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 23em) { /* 368px and below */
+    .main .text {
+        padding: 1rem;
+    }
+    aside .aside-navbar { 
+      grid-template-columns: repeat(3, auto);
+    } 
+}
+/* Screen size - 368px - 480px */
+@media only screen and (max-width: 30em) and (min-width: 23em){
+    .main .text {
+        padding: 1rem 2rem;
+    }
+}
+
+/* Screen size 481px - 664px */
+@media only screen and (max-width: 41.5em) and (min-width: 30.06em) { 
+    .main .text {
+        padding: 1rem 1.5rem;
+    }
+}
+
+/* Screen size 665px - 781px */
+@media only screen and (max-width: 48.8125em) and (min-width: 41.5625em) { 
+    
+    #banner-image { 
+      height: 45rem; 
+    }
+    .main .text { 
+      padding: 1.5rem 2rem; 
+    }
+}
+/* Screen size 782px - 921px */
+@media only screen and (max-width: 57.5625em) and (min-width: 48.875em) { 
+    #banner-image{
+      height: 50rem;
+    }
+    aside .aside-navbar{
+      line-height: 3rem;
+    }
+    .aside-navbar .aside-a {
+      padding: 1rem;
+    }
+    .main .text { 
+      padding: 2rem 6rem; 
+    }
+}
+/* Screen size 922px - 1024px */
+@media only screen and (max-width: 64em) and (min-width: 57.625em) {
+    #banner-image{
+      height: 50rem;
+    }
+    aside .aside-navbar{
+      line-height: 3rem;
+      justify-content: space-around;
+    }
+    .aside-navbar .aside-a {
+      padding: 1rem;
+    }
+    .main .text { 
+      padding: 1rem 0rem; 
+    }
+  
+}
+/* Screen size 1025px and up */
+@media only screen and (min-width: 64.0625em) { 
+    #banner-image{
+      height: 60rem;
+    }
+    aside .aside-navbar{
+      line-height: 3rem;
+      justify-content: space-around;
+    }
+    .aside-navbar .aside-a {
+      padding: 1rem;
+    }
+    .main .text { 
+      padding: 1rem 0rem; 
+    }
+   
+}
+
